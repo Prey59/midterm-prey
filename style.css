@@ -1,3 +1,4 @@
+/* General layout */
 body {
   font-family: Arial, sans-serif;
   background-color: #c1dfdd;
@@ -5,6 +6,7 @@ body {
   padding: 0;
 }
 
+/* Header section */
 header {
   position: relative;
   text-align: center;
@@ -12,7 +14,7 @@ header {
 
 .header-image {
   width: 100%;
-  height: auto;
+  display: block;
 }
 
 .site-title {
@@ -22,8 +24,11 @@ header {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 3em;
+  background-color: rgba(0, 0, 0, 0.5); /* For visibility */
+  padding: 10px 20px;
 }
 
+/* Navigation */
 nav {
   background-color: #d7e8e6;
   border-top: 2px solid #ccc;
@@ -48,28 +53,24 @@ nav a {
   color: black;
 }
 
+/* Main content */
 main {
   padding: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
+/* Image with text wrapping */
 .wrap-image {
   float: left;
   width: 200px;
   margin: 10px 20px 10px 0;
 }
 
-h2 {
-  margin-top: 40px;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
+/* Contact section */
 .contact {
   background-color: #eeeeee;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid #999;
   margin-top: 30px;
 }
@@ -79,19 +80,27 @@ input[type="email"],
 textarea {
   width: 100%;
   max-width: 500px;
-  padding: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  margin-right: 5px;
 }
 
 button {
-  margin-top: 10px;
-  padding: 5px 15px;
-  font-size: 14px;
+  padding: 8px 15px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
 }
 
 footer {
   text-align: right;
   background-color: #d7e8e6;
   padding: 10px 20px;
-  margin-top: 40px;
   font-size: 0.9em;
+  margin-top: 40px;
 }
