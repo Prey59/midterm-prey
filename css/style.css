@@ -1,106 +1,155 @@
-/* General layout */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #c1dfdd;
-  margin: 0;
-  padding: 0;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    background: #aad4cf;
+    margin: 0 auto;
+    width: 60%;
 }
 
-/* Header section */
 header {
-  position: relative;
-  text-align: center;
+    position: relative;
 }
 
-.header-image {
-  width: 100%;
-  display: block;
+.header-content img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
-.site-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3em;
-  background-color: rgba(0, 0, 0, 0.5); /* For visibility */
-  padding: 10px 20px;
+.header-content h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-/* Navigation */
 nav {
-  background-color: #d7e8e6;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+    background-color: #def9f6;
+    font-size: 1.5rem;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav li {
-  margin: 10px 30px;
+nav ul li {
+    flex: 1;
+    text-align: center;
 }
 
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border-right: 1px solid #ccc;
+    background-color: #def9f6;
 }
 
-/* Main content */
+nav ul li:last-child a {
+    border-right: none;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
 main {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
+    background: #def9f6;
+    padding: 20px;
 }
 
-/* Image with text wrapping */
-.wrap-image {
-  float: left;
-  width: 200px;
-  margin: 10px 20px 10px 0;
+.intro img {
+    width: 170px;
+    float: left;
+    margin: 0 15px 10px 0;
 }
 
-/* Contact section */
-.contact {
-  background-color: #eeeeee;
-  padding: 20px;
-  border: 1px solid #999;
-  margin-top: 30px;
+.intro p {
+    text-align: justify;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  max-width: 500px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+.facts ul {
+    padding-left: 20px;
 }
 
-/* Radio buttons */
-input[type="radio"] {
-  margin-right: 5px;
+.contact form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+fieldset legend {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 button {
-  padding: 8px 15px;
-  background-color: #ccc;
-  border: none;
-  cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #def9f6;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a7a7a7;
+    color: #fff;
 }
 
 footer {
-  text-align: right;
-  background-color: #d7e8e6;
-  padding: 10px 20px;
-  font-size: 0.9em;
-  margin-top: 40px;
+    text-align: right;
+    background-color: #def9f6;
+    padding: 15px;
+    color: #000;
+}
+
+h1, h2 {
+    margin: 20px 0 10px;
+}
+
+.h2rem {
+    font-size: 1.5rem;
+}
+
+.midsize {
+    font-size: 1.1rem;
 }
